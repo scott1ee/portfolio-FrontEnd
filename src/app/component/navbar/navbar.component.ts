@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
 }

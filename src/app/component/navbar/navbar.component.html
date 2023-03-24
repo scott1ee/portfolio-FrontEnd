@@ -1,34 +1,25 @@
-<!-- navbar -->
-<nav class="navbar navbar-dark bg-dark sticky-top" id="home">
+<nav class="navbar bg-info">
      <div class="container-fluid">
-          <a class="navbar-brand" href="#">Portfolio Front-End</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-               aria-controls="offcanvasDarkNavbar">
-               <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-               aria-labelledby="offcanvasDarkNavbarLabel">
-               <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Fullstack Dev</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                         aria-label="Close"></button>
-               </div>
-               <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                         <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link active" href="#presentation">Presentation</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link active" href="#projects">Projects</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link active" href="#media">Social Media</a>
-                         </li>
-                    </ul>
-               </div>
-          </div>
+          <!-- left side -->
+          <a class="navbar-brand" href="#">
+               <img src="assets/argprog.png" alt="Logo" width="120" class="d-inline-block">
+               #YoProgramo
+          </a>
+          <!-- right side -->
+          <ul class="nav justify-content-end">
+               <li class="nav-item">
+                    <a class="nav-link text-dark active" href="https://github.com/scott1ee">
+                         <fa-icon [icon]="faGithub"></fa-icon>
+                    </a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link text-dark active" href="https://www.linkedin.com/in/franco-herrera-36723321b/">
+                         <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link text-dark active" href="">Login</a>
+               </li>
+          </ul>
      </div>
 </nav>
