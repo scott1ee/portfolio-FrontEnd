@@ -1,3 +1,7 @@
+* {
+     font-family: 'Rubik', sans-serif;
+}
+
 .contenedor img {
      filter: brightness(0.40);
 }
@@ -10,5 +14,13 @@
      text-align: center;
      top: 50%;
      left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.text1 {
+     color: #b0459f;
+     position: absolute;
+     top: 120%;
+     left: 38%;
      transform: translate(-50%, -50%);
 }
