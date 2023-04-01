@@ -9,6 +9,7 @@ import { ProjectsComponent } from './component/projects/projects.component';
 import { BannerComponent } from './component/banner/banner.component';
 import { EducationComponent } from './component/education/education.component';
 import { SkillsComponent } from './component/skills/skills.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SkillsComponent } from './component/skills/skills.component';
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
