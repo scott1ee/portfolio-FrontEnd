@@ -17,7 +17,7 @@ import { SkillsComponent } from './component/skills/skills.component';
     BannerComponent,
     EducationComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
