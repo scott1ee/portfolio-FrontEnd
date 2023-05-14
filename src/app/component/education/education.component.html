@@ -5,43 +5,18 @@
           <h2 class="accordion-header" id="flush-headingOne">
                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Escuela de Educacion Tecnica N°4 (E.E.S.T.N°4)
+                    {{ education[0].title }}
                </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                data-bs-parent="#accordionFlushExample">
                <div class="accordion-body">
                     <h6>
-                         <strong>Titulo:</strong> Tecnico en Programacion <br>
-                         <strong>Trayecto:</strong> 2017 a 2022
+                         <strong>Titulo:</strong> {{education[0].title_grade}}<br>
+                         <strong>Trayecto:</strong> {{education[0].title_trayectory}}
                     </h6>
                     <hr>
-                    <p>
-                         Actividades y grupos: En este trayecto educativo aprendi mucho sobre desarrollo de aplicaciones
-                         web
-                         y aplicaciones de escritorio.
-                         Usando en el desarrollo web tecnologias como: HTML5, CSS3, Bootstrap5 JS, NodeJS(Use sequelize,
-                         express, hbs, mysql2, nodemon y demas), PHP, MySQL
-                    </p>
-                    <p>
-                         En el desarrollo de aplicaciones de escritorio, las tecnologias usadas fueron el
-                         lenguaje C en muy poca perspectiva.
-                    </p>
-                    <p>
-                         Desarrollamos en el ultimo año muchos proyectos interesantes pero en el que mas puedo destacar
-                         fue
-                         un Indoor de cultivo automatizado. La aplicacion que controlaba todo era una aplicacion web
-                         hecha
-                         con NodeJS, Johnny Five y Arduino la cual tuvimos que desarrollar de 0 con mi compañero de
-                         equipo.
-                         Y una aplicacion web en mi pasantia la cual es un foro/red social que habla sobre plantas y
-                         podes
-                         fomentar tu opinion sobre algo en particular sobre el mundo de las plantas. La aplicacion
-                         permite la
-                         creacion de posteos, comentarios, dar likes a los post, crearte un usuario para realizar todas
-                         las
-                         tareas anteriormente mencionadas.
-                    </p>
+                    {{education[0].description}}
                </div>
           </div>
      </div>
@@ -50,21 +25,18 @@
           <h2 class="accordion-header" id="flush-headingTwo">
                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Universidad Nacional Arturo Jauretche (UNAJ)
+                    {{ education[1].title }}
                </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                data-bs-parent="#accordionFlushExample">
                <div class="accordion-body">
                     <h6>
-                         <strong>Titulo:</strong> Ingeniero en Informatica <br>
-                         <strong>Trayecto:</strong> 2023 a 2028 aproximadamente
+                         <strong>Titulo:</strong> {{education[1].title_grade}} <br>
+                         <strong>Trayecto:</strong> {{education[1].title_trayectory}}
                     </h6>
                     <hr>
-                    <p>
-                         Este año en curso comenze con la cursada de la carrera propiamente dicha. Cursando el primer
-                         año respectivamente.
-                    </p>
+                    {{education[1].description}}
                </div>
           </div>
      </div>
@@ -73,28 +45,18 @@
           <h2 class="accordion-header" id="flush-headingThree">
                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Argentina Programa (#SeProgramar & #YoProgramo)
+                    {{ education[2].title }}
                </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                data-bs-parent="#accordionFlushExample">
                <div class="accordion-body">
                     <h6>
-                         <strong>Titulo:</strong> Full Stack Jr Developer <br>
-                         <strong>Trayecto:</strong> Octubre 2022 a Mayo 2023
+                         <strong>Titulo:</strong> {{education[2].title_grade}} <br>
+                         <strong>Trayecto:</strong> {{education[2].title_trayectory}}
                     </h6>
                     <hr>
-                    <p>
-                         Contenidos: Introduccion a Desarrollo Web y Aplicaciones, Desarrollo Front End Estatico,
-                         Desarrollo Front End Dinamico, Bases de Datos, POO buenas practicas de programacion,
-                         Programacion con Java, Programacion Web con Java, Back End con Spring Boot, DevOps.
-                    </p>
-                    <p>
-                         Trabajo final
-                         Desarrollar una aplicación web full stack, que mostrará: tus datos personales, estudios
-                         cursados, experiencia laboral, conocimiento de las
-                         tecnologías y lo que desees agregar.
-                    </p>
+                    {{education[2].description}}
                </div>
           </div>
      </div>
@@ -103,36 +65,18 @@
           <h2 class="accordion-header" id="flush-headingFour">
                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Cisco Networking Acamedy
+                    {{ education[3].title }}
                </button>
           </h2>
           <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                data-bs-parent="#accordionFlushExample">
                <div class="accordion-body">
                     <h6>
-                         <strong>Titulo:</strong> IT Essentials PC Hardware and Software<br>
-                         <strong>Trayecto:</strong> Marzo 2020 a Octubre 2020
+                         <strong>Titulo:</strong> {{education[3].title_grade}}<br>
+                         <strong>Trayecto:</strong> {{education[3].title_trayectory}}
                     </h6>
                     <hr>
-                    <p>
-                         - Seleccionar e instalar los componentes de la computadora adecuados para armar, reparar, o
-                         actualizar las computadoras personales. <br>
-                         - Demostrar como son los procedimientos seguros de laboratorio. <br>
-                         - Usar adecuadamente herramientas para realizar mantenimiento preventivo y resolver problemas
-                         en computadoras personales. <br>
-                         - Realizar la instalacion, la reparacion, el mantenimiento y la solucion de problemas de los
-                         sistemas operativos Windows. <br>
-                         - Explicar el funcionamiento de las redes de area local y configurar dispositivos para que se
-                         conecten a redes LAN y a Internet. <br>
-                         - Configurar los dispositivos para conectarse a Internet y los servicios en la nube. <br>
-                         - Explicar como configurar, reparar, actualizar, mantener y solucionar problemas de
-                         computadoras portatles y dispositivos moviles. <br>
-                         - Explicar como configurar, asegurar y resolver problemas con los sistemas operativos, OS X y
-                         Linux. <br>
-                         - Instalar y compartir una impresora para cumplir los requisitos. <br>
-                         - Implementar la seguridad basica de usuario, datos y red. <br>
-                         - Explicar las funciones y las responsabilidades del profesional de TI.
-                    </p>
+                    {{education[3].description}}
                </div>
           </div>
      </div>
@@ -141,24 +85,18 @@
           <h2 class="accordion-header" id="flush-headingFive">
                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    SoloLearn
+                    {{ education[4].title }}
                </button>
           </h2>
           <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
                data-bs-parent="#accordionFlushExample">
                <div class="accordion-body">
                     <h6>
-                         <strong>Titulo:</strong> Cursos basicos de diversos lenguajes de programacion y maquetacion
-                         web. <br>
-                         <strong>Trayecto:</strong> Enero a Diciembre de 2020
+                         <strong>Titulo:</strong> {{education[4].title_grade}} <br>
+                         <strong>Trayecto:</strong> {{education[4].title_trayectory}}
                     </h6>
                     <hr>
-                    <p>
-                         - Curso basico de HTML. <br>
-                         - Curso basico de CSS. <br>
-                         - Curso basico de JS. <br>
-                         - Curso basico de PHP.
-                    </p>
+                    {{education[4].description}}
                </div>
           </div>
      </div>
@@ -167,21 +105,18 @@
           <h2 class="accordion-header" id="flush-headingSix">
                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                    Platzi
+                    {{ education[5].title }}
                </button>
           </h2>
           <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
                data-bs-parent="#accordionFlushExample">
                <div class="accordion-body">
                     <h6>
-                         <strong>Titulo:</strong> Curso de programacion basica <br>
-                         <strong>Trayecto:</strong> Mayo 2020 a Julio 2020
+                         <strong>Titulo:</strong> {{education[5].title_grade}} <br>
+                         <strong>Trayecto:</strong> {{education[5].title_trayectory}}
                     </h6>
                     <hr>
-                    <p>
-                         Aprendi bases de JS muy solidas, un pequeño proyecto con arduino y un framework de NodeJS para
-                         controlar el arduino a traves de codigo JS(JohnnyFive).
-                    </p>
+                    {{education[5].description}}
                </div>
           </div>
      </div>
