@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -6,7 +6,9 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   faGithub = faGithub;
   faLinkedin = faLinkedin;
+
+  ngOnInit() { }
 }
