@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
@@ -11,7 +11,7 @@ import { BannerComponent } from './component/banner/banner.component';
 import { EducationComponent } from './component/education/education.component';
 import { ProjectsComponent } from './component/projects/projects.component';
 import { SkillsComponent } from './component/skills/skills.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AuthInterceptor } from './helpers/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
     BannerComponent,
     EducationComponent,
     ProjectsComponent,
-    SkillsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -28,9 +28,13 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
